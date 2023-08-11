@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HUBB Anmeldung</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f2f2f7;
+      overflow: hidden;
+    }
+    .iphone {
+      width: 320px;
+      height: 600px;
+      background-color: #f7f7f7; /* iPhone Hintergrundfarbe */
+      border: 2px solid #d0d0d0; /* Rahmenfarbe */
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      width: 80%;
+    }
+    .floating {
+      animation: float 2s infinite alternate; /* Auf- und Ab-Schweben-Effekt */
+    }
+    @keyframes float {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(0, 5px);
+      }
+    }
+    input, button {
+      margin: 8px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 16px;
+    }
+    button {
+      background-color: #c0c0c0; /* Silberfarbe */
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #a0a0a0; /* Dunklere Silberfarbe */
+    }
+    .register-text {
+      margin-top: 10px;
+      color: #777; /* Weicherer Grauton */
+      font-size: 14px;
+    }
+    .register-button {
+      background: none;
+      border: none;
+      color: #c0c0c0; /* Silberfarbe */
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    .register-button:hover {
+      color: #a0a0a0; /* Dunklere Silberfarbe */
+    }
+    .hubb-logo {
+      font-size: 48px;
+      font-weight: bold;
+      color: #c0c0c0; /* Silberfarbe */
+      margin-top: -70px;
+    }
+  </style>
+</head>
+<body>
+  <div class="iphone floating">
+    <div class="container">
+      <div class="hubb-logo">HUBB</div>
+
+      <!-- Benutzeranmeldeformular -->
+      <input type="email" id="loginEmail" placeholder="E-Mail">
+      <input type="password" id="loginPassword" placeholder="Passwort">
+      <button onclick="loginUser()">Anmelden</button>
+
+      <!-- Registrierungs-Button -->
+      <p class="register-text">Noch nicht registriert? <button class="register-button" onclick="showRegistration()">Hier registrieren</button></p>
+    </div>
+  </div>
+
+  <!-- JavaScript-Script -->
+  <script>
+    // Hier fügen Sie das JavaScript-Script ein, das ich zuvor bereitgestellt habe
+    // Funktionen loginUser(), showRegistration() und so weiter
+  </script>
+</body>
+</html>
